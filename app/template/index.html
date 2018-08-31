@@ -1,0 +1,30 @@
+{% extends 'base.html'%} {% import 'macros.html' as macro%}
+
+<!--styles Block-->
+
+{% block styles%} {{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+{% endblock %}
+
+
+<!-- Content block -->
+{% block content %}
+
+<div class="container">
+    <form>
+        <input type="text" name="news_query" placeholder="Search for News" class="form-control">
+        <input type="submit" value="Submit" class="btn btn-default">
+    </form>
+
+</div>
+<div class="container" style="text-align:center">
+        <!-- News Sources -->
+        <h1 style="font-family: 'Bitter', serif;font-size:34px;text-decoration:underline;color:crimson;"> NEWS CHANNELS</h3>
+</div>
+<div class="row">
+    <ul style="font-family: 'Bitter', serif;font-size:18px;font-weight:normal;">
+        {{ macro.displaySourcesList(news_sources)}}
+    </ul>
+</div>
+
+{% endblock %}
