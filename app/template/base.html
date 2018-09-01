@@ -1,0 +1,35 @@
+{% extends 'bootstrap/base.html'%}
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if title %}
+    <title> {{ title }}</title>
+    {% else %}
+    <title>Home - Unbiased News sources </title>
+    {% endif %}
+</head>
+<body>
+  <!-- Styles block -->
+
+  {% block styles%} {{ super() }}
+  <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+  {% endblock %}
+
+    <!-- Content Block -->
+    {% block content %}
+    {% endblock %}
+
+    <!-- Navbar block  -->
+    {% block navbar %}
+    {% include 'navbar.html' %}
+    {% endblock %}
+
+</body>
+
+</html>
