@@ -8,7 +8,7 @@ def index():
     View root page function that returns index page and the various news sources
     '''
 
-    title = 'Welcome to the most unbiased News source page'
+    title = 'Welcome to the most Realistic News source page'
 
     # Getting news sources
     news_sources = get_News_sources('business')
@@ -21,6 +21,6 @@ def source(source_id):
     View for top story articles
     '''
     source_and_articles = get_News_articles(source_id)
-    # for source in source_and_articles:
+    #for source in source_and_articles:
     #     print(source.urlToImage)
     return render_template('articles.html',source_and_articles = source_and_articles)
