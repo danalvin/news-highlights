@@ -11,7 +11,7 @@ def index():
     title = 'Welcome to the most Realistic News source page'
 
     # Getting news sources
-    news_sources = get_News_sources('business')
+    news_sources = get_News_sources('sources')
     return render_template('index.html', title = title, news_sources = news_sources)
 
 

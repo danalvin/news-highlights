@@ -2,9 +2,9 @@ class News_sources:
     """
     News_sources class to define News_sources Objects
     """
-    def __init__(self, source_id, source_name, author, description, url):
+    def __init__(self, source_id, title, author, description, url):
         self.source_id = source_id
-        self.source_name = source_name
+        self.title = title
         self.author = author
         self.description = description
         self.url = url

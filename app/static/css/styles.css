@@ -1,3 +1,7 @@
 .myHeading{
     color: blue;
+    font-family: 'Allura';font-size: 30px;   
+}
+body{
+    background-color: grey;
 }

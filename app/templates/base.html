@@ -8,6 +8,7 @@
     <meta charset="utf-8">
     <link href="https://fonts.googleapis.com/css?family=Bitter" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
     {% if title %}
     <title> {{ title }}</title>
     {% else %}
@@ -19,6 +20,7 @@
 
   {% block styles%} {{ super() }}
   <link rel="stylesheet" href="{{url_for('static',filename='css/styles.css')}}">
+  <link href='https://fonts.googleapis.com/css?family=Allura' rel='stylesheet'>
   {% endblock %}
 
     <!-- Content Block -->

@@ -1,0 +1,24 @@
+{% extends 'base.html'%} {% import 'macros.html' as macro%}
+
+{% block content %}
+<style>
+    body {
+        background-color: #262826   ;
+    }
+</style>
+
+<div class="container-fluid" style="margin-top:50px;background-color:black;margin-bottom:50px ">
+
+</div>
+
+<div class="card bg-light">
+    <div class="card-body text-center">
+        <div class="col-m-3  justify-content-between">
+          
+              {{ macro.displayNewsarticles(source_and_articles)}}
+          
+        </div>
+  </div>
+</div>
+
+{% endblock %}

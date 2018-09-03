@@ -5,7 +5,7 @@
 This is an applicatiion that is hosted by *heroku*
 ## Setup/Installation Requirements
 * clone the repository and access the programm via these commands on your terminal
->$ cd news-highlighe-dan
+>$ cd news-highlights-dan
 
 * then you run it with the following command 
 
@@ -15,8 +15,8 @@ This is an applicatiion that is hosted by *heroku*
 ## Known Bugs
 no known bugs 
 ## Technologies Used
-Python
-flask
+>Python
+>flask
 ## Support and contact details
 send an email to [Dan Alvin](mungaiwaituika@gmail.com) 
 ### License
